@@ -1,5 +1,5 @@
-import './style.css'
-import rocketLogo from '/rocket.png'
+import "./style.css";
+import rocketLogo from "/rocket.png";
 import { DiscordSDK } from "@discord/embedded-app-sdk";
 
 // const discordSdk = new DiscordSDK(import.meta.env.VITE_DISCORD_CLIENT_ID);
@@ -8,9 +8,12 @@ import { DiscordSDK } from "@discord/embedded-app-sdk";
 //   console.log("Discord SDK is ready");
 // });
 
-document.querySelector('#app').innerHTML = `
+const app = document.querySelector("#app");
+if (app) {
+  app.innerHTML = `
   <div>
     <img src="${rocketLogo}" class="logo" alt="Discord" />
     <h1>Hello, World!</h1>
   </div>
 `;
+}
