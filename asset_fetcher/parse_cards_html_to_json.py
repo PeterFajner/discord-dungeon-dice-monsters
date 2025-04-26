@@ -107,7 +107,7 @@ for filename in os.listdir(folder_path):
         except AttributeError:
             pass
 
-        properties["level"] = get_table_value("Level")
+        properties["level"] = int(get_table_value("Level\n"))
 
         # hp, atk, def
         try:
@@ -122,7 +122,7 @@ for filename in os.listdir(folder_path):
         except Exception:
             pass
 
-        properties["number"] = get_table_value("Number")
+        properties["number"] = get_table_value("Number\n")
 
         try:
             properties["lore"] = infobox.find("div", class_="lore").text.strip()

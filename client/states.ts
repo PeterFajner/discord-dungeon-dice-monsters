@@ -1,1 +1,1 @@
-export type APP_STATE = 'home' | 'game';
+export type APP_STATE = 'home' | 'game' | 'decks';

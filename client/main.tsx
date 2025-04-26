@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
-import rocketLogo from "/rocket.png";
-import { DiscordSDK } from "@discord/embedded-app-sdk";
+// import { DiscordSDK } from "@discord/embedded-app-sdk";
 import { createRoot } from 'react-dom/client';
 import App from "./App";
 
