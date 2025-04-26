@@ -1,0 +1,1 @@
+export type APP_STATE = 'home' | 'game';
